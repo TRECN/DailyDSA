@@ -7,7 +7,20 @@ bool pairInSortedRotated(int arr[],int n, int x){
         if(arr[i]>arr[i+1])
             break;
     }
+    int l=(i+1)%n;
 
+    int r=i;
+
+    while(l!=r){
+        if(arr[r]+arr[l]==x)
+            return true;
+        
+        if(arr[r]+arr[l]>x)
+            r=(n-1+r)%n;
+        else
+            l=(l+1)%n;
+    }
+    return false;
 }
 
 int main()
