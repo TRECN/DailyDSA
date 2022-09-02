@@ -3,7 +3,7 @@ using namespace std;
 
 bool pairInSortedRotated(int arr[],int n, int x){
     int i;
-    for(int i=0;i<n-1;i++){
+    for(i=0;i<n-1;i++){
         if(arr[i]>arr[i+1])
             break;
     }
@@ -22,7 +22,6 @@ bool pairInSortedRotated(int arr[],int n, int x){
     }
     return false;
 }
-
 int main()
 {
     int arr[] = { 11, 15, 6, 8, 9, 10 };
