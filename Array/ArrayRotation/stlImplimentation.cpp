@@ -6,5 +6,9 @@ int main(){
     for(int i=0;i<vect.size();i++){
         cout<<vect[i]<<" ";
     }
+    sort(vect.begin(),vect.end());
+    if(binary_search(vect.begin(),vect.end(),2)){
+        cout<<"found";
+    }
     return 0;
 }
