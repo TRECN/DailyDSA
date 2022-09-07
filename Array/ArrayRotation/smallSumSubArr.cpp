@@ -19,7 +19,7 @@ int smallSumSubArr(int *arr,int n){
 
 int main()
 {
-    int arr[] = {3, 2, 2, 4, 9, 7, -5};
+    int arr[] = {3, 2, 2, 4, 9, 7, 5};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << "Smallest sum: "
          << smallSumSubArr(arr, n);
