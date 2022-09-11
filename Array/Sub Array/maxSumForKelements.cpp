@@ -4,7 +4,6 @@ int maxSumForKele(int *arr,int n,int k){
     int maxSum=0;
     for(int i=0;i<k;i++)
         maxSum+=arr[i];
-    
     int curSum=maxSum;
     for(int i=k;i<n;i++){
         curSum+=arr[i]-arr[i-k];
