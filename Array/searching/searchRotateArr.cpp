@@ -26,4 +26,4 @@ int main(){
     int a[]={4,5,6,7,0,1,2};
     cout<<searchRotateArr(a,7,1);
     return 0;
-}
+} 
