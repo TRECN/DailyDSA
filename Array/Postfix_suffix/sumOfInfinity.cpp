@@ -16,3 +16,8 @@ vector<int> sumInRanges(vector<int> &arr, int n, vector<vector<long long>> &quer
     }
     return ans;
 }
+int main(){
+    int a[]={1,2,3,4,5,6,7};
+    cout<<countSmallorEqualEle(a,7,5);
+    return 0;
+}
