@@ -1,13 +1,15 @@
 #include<bits/stdc++.h>
 using namespace std;
-void oneN(int i,int n){
-    if(i>n){
+void oneN(int n){
+    if(n==1){
+        cout<<n<<endl;
         return;
     }
-    cout<<i<<endl;
-    oneN(++i,n);
+    oneN(n-1);
+    cout<<n<<endl;
+    
 }
 int main(){
     int n=10;
-    oneN(1,n);
+    oneN(n);
 }
