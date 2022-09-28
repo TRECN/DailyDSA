@@ -26,4 +26,8 @@ int main(){
     s.push(1);
     s.push(2);
     sortt(s);
+    while(!s.empty()){
+        cout<<s.top();
+        s.pop();
+    }
 };
