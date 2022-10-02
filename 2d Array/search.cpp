@@ -1,4 +1,5 @@
 #include <bits/stdc++.h> 
+using namespace std;
 int sc(vector<int>&a,int n,int t){
     int l=0;
     int h=n-1;
@@ -22,4 +23,10 @@ bool findTargetInMatrix(vector < vector < int >> & mat, int m, int n, int target
             break;
     }
     return (i)?true:false;
+}
+int main(){
+    vector<vector<int>>m={{1,2,3},
+                            {4,5,6}};
+    cout<<findTargetInMatrix(m,2,3,5);
+
 }
