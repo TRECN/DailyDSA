@@ -27,6 +27,6 @@ bool findTargetInMatrix(vector < vector < int >> & mat, int m, int n, int target
 int main(){
     vector<vector<int>>m={{1,2,3},
                             {4,5,6}};
-    cout<<findTargetInMatrix(m,2,3,5);
+    cout<<findTargetInMatrix(m,2,3,9);
 
 }
