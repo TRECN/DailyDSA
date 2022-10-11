@@ -11,7 +11,10 @@ int Knap(vector<int>&w,vector<int>&v,int W,int n){
     else 
         return t[n][W]=Knap(w,v,W,n-1);
 }
-
+int knapsack(vector<int>&w,vector<int>&v,int W,int n){
+    memset(t,-1,sizeof(t));
+    return Knap(w,v,W,n);
+}
 int main(){
     vector<int>w={2,3,5,6};
     vector<int>v={15,2,3,10};
