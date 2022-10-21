@@ -9,13 +9,13 @@ int subsetSum(int a[],int n,int k){
     if(n==0)
         return 0;
     
-    if(t[n-1][k]!=-1)
-        return t[n-1][k];
+    if(t[n][k]!=-1)
+        return t[n][k];
 
     if(a[n-1]>k)
-        return t[n-1][k]=subsetSum(a,n-1,k);
+        return t[n][k]=subsetSum(a,n-1,k);
 
-    return t[n-1][k]=subsetSum(a,n-1,k)||subsetSum(a,n-1,k-a[n-1]);    
+    return t[n][k]=subsetSum(a,n-1,k)||subsetSum(a,n-1,k-a[n-1]);    
 }
 
 
@@ -23,7 +23,7 @@ int main()
 {
     memset(t, -1, sizeof(t));
     int n = 5;
-    int a[] = {1, 5, 3, 7, 4};
+    int a[] = {1, 5, 1, 1, 1};
     int sum = 12;
   
     if (subsetSum(a, n, sum))
