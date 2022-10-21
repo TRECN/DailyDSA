@@ -10,8 +10,8 @@ int fib(int n,vector<int>&t){
 }
 int main()
 {   
-    vector<int>t(5+1,-1);
-    cout<<fib(5,t);
+    vector<int>t(95+1,-1);
+    cout<<fib(95,t);
     return 0;
     
 }
