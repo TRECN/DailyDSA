@@ -12,3 +12,5 @@ int maximumNonAdjacentSum(vector<int> &nums){
 
     return maxSum(nums,n);
 }
+
+int main()
