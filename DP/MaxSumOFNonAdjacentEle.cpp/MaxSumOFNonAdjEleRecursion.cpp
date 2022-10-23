@@ -10,5 +10,5 @@ int maximumNonAdjacentSum(vector<int> &nums){
     
     int n=nums.size();
 
-    return maxSum(nums,n,);
+    return maxSum(nums,n);
 }
