@@ -14,7 +14,7 @@ int maxProfit(int n, int l,vector<vector<int>>&p){
 }
 int main()
 {
-    int n=0;
+    int n=3;
     vector<vector<int>>p={{1,2,5},
     {3,1,1},{3,3,3}};
 
