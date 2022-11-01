@@ -1,3 +1,19 @@
+#include <iostream>
+using namespace std;
+bool isSubsetSum(int a[],int n,int k){
+    if(k==0)
+        return true;
+    if(n==0)
+        return false;
+    if(a[n-1]>k)
+        return isSubsetSum(a, n-1,k);
+    
+    else 
+        return isSubsetSum(a,n-1,k)||
+                isSubsetSum(a,n-1,k-a[n-1]);
+
+}
+
 
 int main()
 {
